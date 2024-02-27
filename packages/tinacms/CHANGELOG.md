@@ -1,5 +1,21 @@
 # tinacms
 
+## 1.6.0
+
+### Minor Changes
+
+- b14f54ba0: Scope change ready to publish
+
+### Patch Changes
+
+- 485af8a0d: Change scope
+- Updated dependencies [b14f54ba0]
+- Updated dependencies [485af8a0d]
+  - @strivemath/tinacms-mdx@1.4.0
+  - @strivemath/tinacms-schema-tools@1.5.0
+  - @strivemath/tinacms-search@1.1.0
+  - @strivemath/tinacms-sharedctx@1.1.0
+
 ## 1.5.28
 
 ### Patch Changes

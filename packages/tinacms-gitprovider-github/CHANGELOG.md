@@ -1,5 +1,18 @@
 # tinacms-gitprovider-github
 
+## 2.0.0
+
+### Minor Changes
+
+- b14f54ba0: Scope change ready to publish
+
+### Patch Changes
+
+- 485af8a0d: Change scope
+- Updated dependencies [b14f54ba0]
+- Updated dependencies [485af8a0d]
+  - @strivemath/tinacms-datalayer@1.3.0
+
 ## 1.0.3
 
 ### Patch Changes

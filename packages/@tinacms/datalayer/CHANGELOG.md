@@ -1,5 +1,18 @@
 # tina-graphql
 
+## 1.3.0
+
+### Minor Changes
+
+- b14f54ba0: Scope change ready to publish
+
+### Patch Changes
+
+- 485af8a0d: Change scope
+- Updated dependencies [b14f54ba0]
+- Updated dependencies [485af8a0d]
+  - @strivemath/tinacms-graphql@1.5.0
+
 ## 1.2.32
 
 ### Patch Changes

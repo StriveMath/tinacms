@@ -1,5 +1,25 @@
 # tinacms-cli
 
+## 1.6.0
+
+### Minor Changes
+
+- b14f54ba0: Scope change ready to publish
+- 8a5bbb808: fixed tinacms cli bin entry
+
+### Patch Changes
+
+- 485af8a0d: Change scope
+- Updated dependencies [b14f54ba0]
+- Updated dependencies [485af8a0d]
+  - @strivemath/tinacms-app@1.3.0
+  - @strivemath/tinacms-datalayer@1.3.0
+  - @strivemath/tinacms-graphql@1.5.0
+  - @strivemath/tinacms-metrics@1.1.0
+  - @strivemath/tinacms-schema-tools@1.5.0
+  - @strivemath/tinacms-search@1.1.0
+  - @strivemath/tinacms@1.6.0
+
 ## 1.5.39
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # tinacms-clerk
 
+## 2.0.0
+
+### Minor Changes
+
+- b14f54ba0: Scope change ready to publish
+
+### Patch Changes
+
+- 485af8a0d: Change scope
+- Updated dependencies [b14f54ba0]
+- Updated dependencies [485af8a0d]
+  - @strivemath/tinacms@1.6.0
+
 ## 1.0.4
 
 ### Patch Changes
