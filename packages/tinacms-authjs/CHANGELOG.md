@@ -1,5 +1,11 @@
 # tinacms-authjs
 
+## 1.0.7
+
+### Patch Changes
+
+- 455805f1d: return full jwt token in session
+
 ## 1.0.6
 
 ### Patch Changes
