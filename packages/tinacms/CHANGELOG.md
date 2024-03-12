@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.30
+
+### Patch Changes
+
+- 218194fe6: log fetchCollection
+
 ## 1.5.29
 
 ### Patch Changes
