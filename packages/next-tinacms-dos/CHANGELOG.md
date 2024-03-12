@@ -1,5 +1,12 @@
 # @strivemath/next-tinacms-cloudinary
 
+## 1.3.15
+
+### Patch Changes
+
+- Updated dependencies [218194fe6]
+  - @strivemath/tinacms@1.5.30
+
 ## 1.3.14
 
 ### Patch Changes
