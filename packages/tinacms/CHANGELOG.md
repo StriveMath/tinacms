@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.32
+
+### Patch Changes
+
+- b56a6cf9b: rename to TinaAdminApi.getUser to fetchUser
+
 ## 1.5.31
 
 ### Patch Changes
