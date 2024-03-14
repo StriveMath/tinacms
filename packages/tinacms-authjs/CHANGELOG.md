@@ -1,5 +1,14 @@
 # tinacms-authjs
 
+## 1.0.13
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-schema-tools@1.4.17
+  - @strivemath/tinacms@1.5.35
+
 ## 1.0.12
 
 ### Patch Changes

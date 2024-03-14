@@ -1,5 +1,16 @@
 # tinacms
 
+## 1.5.35
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-mdx@1.3.25
+  - @strivemath/tinacms-schema-tools@1.4.17
+  - @strivemath/tinacms-search@1.0.19
+  - @strivemath/tinacms-sharedctx@1.0.4
+
 ## 1.5.34
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @tinacms/self-hosted-starter
 
+## 0.1.51
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-datalayer@1.2.34
+  - @strivemath/tinacms@1.5.35
+  - @strivemath/tinacms-authjs@1.0.13
+  - @strivemath/tinacms-gitprovider-github@1.0.5
+
 ## 0.1.50
 
 ### Patch Changes

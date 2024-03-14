@@ -1,5 +1,13 @@
 # tinacms-clerk
 
+## 1.0.11
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms@1.5.35
+
 ## 1.0.10
 
 ### Patch Changes

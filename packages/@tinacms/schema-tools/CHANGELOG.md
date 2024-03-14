@@ -1,5 +1,11 @@
 # @strivemath/tinacms-schema-tools
 
+## 1.4.17
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+
 ## 1.4.16
 
 ### Patch Changes

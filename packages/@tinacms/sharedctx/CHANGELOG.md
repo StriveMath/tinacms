@@ -1,5 +1,11 @@
 # @strivemath/tinacms-sharedctx
 
+## 1.0.4
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+
 ## 1.0.3
 
 ### Patch Changes

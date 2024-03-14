@@ -1,5 +1,14 @@
 # @strivemath/tinacms-search
 
+## 1.0.19
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-graphql@1.4.34
+  - @strivemath/tinacms-schema-tools@1.4.17
+
 ## 1.0.18
 
 ### Patch Changes

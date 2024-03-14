@@ -1,5 +1,14 @@
 # e2e-next
 
+## 0.1.66
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-datalayer@1.2.34
+  - @strivemath/tinacms@1.5.35
+
 ## 0.1.65
 
 ### Patch Changes

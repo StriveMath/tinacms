@@ -1,5 +1,13 @@
 # Change Log
 
+## 0.0.31
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms@1.5.35
+
 ## 0.0.30
 
 ### Patch Changes

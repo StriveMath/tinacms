@@ -1,5 +1,15 @@
 # @tinacms/starter
 
+## 0.1.31
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-mdx@1.3.25
+  - @strivemath/tinacms-vercel-previews@0.0.31
+  - @strivemath/tinacms@1.5.35
+
 ## 0.1.30
 
 ### Patch Changes
