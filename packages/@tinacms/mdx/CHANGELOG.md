@@ -1,5 +1,13 @@
 # @strivemath/tinacms-mdx
 
+## 1.3.25
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-schema-tools@1.4.17
+
 ## 1.3.24
 
 ### Patch Changes

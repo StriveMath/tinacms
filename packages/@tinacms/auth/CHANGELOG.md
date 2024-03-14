@@ -1,5 +1,11 @@
 # @strivemath/tinacms-auth
 
+## 1.0.6
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+
 ## 1.0.5
 
 ### Patch Changes

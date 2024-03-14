@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.1.5
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+
 ## 1.1.4
 
 ### Patch Changes

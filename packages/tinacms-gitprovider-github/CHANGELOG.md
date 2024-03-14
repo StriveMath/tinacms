@@ -1,5 +1,13 @@
 # tinacms-gitprovider-github
 
+## 1.0.5
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-datalayer@1.2.34
+
 ## 1.0.4
 
 ### Patch Changes

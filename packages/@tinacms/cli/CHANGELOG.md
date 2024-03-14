@@ -1,5 +1,19 @@
 # tinacms-cli
 
+## 1.5.48
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-app@1.2.42
+  - @strivemath/tinacms-datalayer@1.2.34
+  - @strivemath/tinacms-graphql@1.4.34
+  - @strivemath/tinacms-metrics@1.0.4
+  - @strivemath/tinacms-schema-tools@1.4.17
+  - @strivemath/tinacms-search@1.0.19
+  - @strivemath/tinacms@1.5.35
+
 ## 1.5.47
 
 ### Patch Changes

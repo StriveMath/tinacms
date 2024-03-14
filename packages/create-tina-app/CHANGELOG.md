@@ -1,5 +1,13 @@
 # @strivemath/create-tina-app
 
+## 1.0.6
+
+### Patch Changes
+
+- b24af1f4f: bump all packages and republish everything
+- Updated dependencies [b24af1f4f]
+  - @strivemath/tinacms-metrics@1.0.4
+
 ## 1.0.5
 
 ### Patch Changes
