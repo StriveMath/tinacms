@@ -1,5 +1,12 @@
 # @strivemath/next-tinacms-s3
 
+## 1.3.17
+
+### Patch Changes
+
+- Updated dependencies [b56a6cf9b]
+  - @strivemath/tinacms@1.5.32
+
 ## 1.3.16
 
 ### Patch Changes

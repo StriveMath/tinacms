@@ -1,5 +1,14 @@
 # @tinacms/self-hosted-starter
 
+## 0.1.48
+
+### Patch Changes
+
+- b56a6cf9b: rename to TinaAdminApi.getUser to fetchUser
+- Updated dependencies [b56a6cf9b]
+  - @strivemath/tinacms@1.5.32
+  - @strivemath/tinacms-authjs@1.0.10
+
 ## 0.1.47
 
 ### Patch Changes
