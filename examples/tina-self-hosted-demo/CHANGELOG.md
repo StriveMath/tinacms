@@ -1,5 +1,14 @@
 # @tinacms/self-hosted-starter
 
+## 0.1.50
+
+### Patch Changes
+
+- 1c45c715c: fix build pipeline
+- Updated dependencies [1c45c715c]
+  - @strivemath/tinacms@1.5.34
+  - @strivemath/tinacms-authjs@1.0.12
+
 ## 0.1.49
 
 ### Patch Changes

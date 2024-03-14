@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.34
+
+### Patch Changes
+
+- 1c45c715c: fix build pipeline
+
 ## 1.5.33
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.30
+
+### Patch Changes
+
+- Updated dependencies [1c45c715c]
+  - @strivemath/tinacms@1.5.34
+
 ## 0.0.29
 
 ### Patch Changes
