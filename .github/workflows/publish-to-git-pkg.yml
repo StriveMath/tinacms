@@ -22,12 +22,12 @@ jobs:
 
       - name: Install dependancies
         run: pnpm install
+      - name: Test
+        run: pnpm test
       - name: Build
         run: pnpm build
       - name: Build types
         run: pnpm types
-      - name: Test
-        run: pnpm test
 
       - name: Publish
         run: pnpm run publish
