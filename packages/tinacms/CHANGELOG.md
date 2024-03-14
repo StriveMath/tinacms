@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.33
+
+### Patch Changes
+
+- 488b3dfe8: attempt republish of broken package types
+
 ## 1.5.32
 
 ### Patch Changes
