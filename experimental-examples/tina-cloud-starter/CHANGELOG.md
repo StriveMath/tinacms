@@ -1,5 +1,13 @@
 # @tinacms/starter
 
+## 0.1.29
+
+### Patch Changes
+
+- Updated dependencies [488b3dfe8]
+  - @strivemath/tinacms@1.5.33
+  - @strivemath/tinacms-vercel-previews@0.0.29
+
 ## 0.1.28
 
 ### Patch Changes

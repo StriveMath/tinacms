@@ -1,5 +1,13 @@
 # tinacms-cli
 
+## 1.5.46
+
+### Patch Changes
+
+- Updated dependencies [488b3dfe8]
+  - @strivemath/tinacms@1.5.33
+  - @strivemath/tinacms-app@1.2.40
+
 ## 1.5.45
 
 ### Patch Changes
