@@ -1,5 +1,13 @@
 # @tinacms/self-hosted-starter
 
+## 0.1.47
+
+### Patch Changes
+
+- Updated dependencies [d2c6a5d5e]
+  - @strivemath/tinacms@1.5.31
+  - @strivemath/tinacms-authjs@1.0.9
+
 ## 0.1.46
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.31
+
+### Patch Changes
+
+- d2c6a5d5e: expose TinaAdminApi.getUser and filter collections by group
+
 ## 1.5.30
 
 ### Patch Changes
