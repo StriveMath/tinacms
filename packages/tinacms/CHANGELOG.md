@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.36
+
+### Patch Changes
+
+- 8702fcc88: log fetchCollection args + expose graphqlFilter argument
+
 ## 1.5.35
 
 ### Patch Changes
