@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.37
+
+### Patch Changes
+
+- 68e7acf94: remove filter.or
+
 ## 1.5.36
 
 ### Patch Changes
