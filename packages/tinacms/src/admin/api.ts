@@ -167,7 +167,6 @@ export class TinaAdminApi {
         if (!filter) filter = { [collectionName]: {} }
         if (!filter[collectionName].group)
           filter[collectionName].group = { eq: user?.group }
-        filter.or = { __typename: 'Folder' }
       }
     }
 
