@@ -1,5 +1,12 @@
 # e2e-next
 
+## 0.1.68
+
+### Patch Changes
+
+- Updated dependencies [68e7acf94]
+  - @strivemath/tinacms@1.5.37
+
 ## 0.1.67
 
 ### Patch Changes
