@@ -160,19 +160,17 @@ export class TinaAdminApi {
       }
     }
 
-    const user = await this.fetchUser()
-    const collectionDefinition = this.schema.getCollection(collectionName)
-    if (user?.group && user?.group !== 'admin') {
-      if (collectionDefinition.fields.find((field) => field.name === 'group')) {
-        if (!filter) filter = { [collectionName]: {} }
-        if (!filter[collectionName].group)
-          filter[collectionName].group = { eq: user?.group }
-      }
-    }
+    // const user = await this.fetchUser()
+    // const collectionDefinition = this.schema.getCollection(collectionName)
+    // if (user?.group && user?.group !== 'admin') {
+    //   if (collectionDefinition.fields.find((field) => field.name === 'group')) {
+    //     if (!filter) filter = { [collectionName]: {} }
+    //     if (!filter[collectionName].group)
+    //       filter[collectionName].group = { eq: user?.group }
+    //   }
+    // }
 
     if (graphqlFilter) filter = graphqlFilter
-
-    console.log({ user, filter })
 
     if (includeDocuments === true) {
       const sort = sortKey || this.schema.getIsTitleFieldName(collectionName)
@@ -284,6 +282,34 @@ export class TinaAdminApi {
             )
 
       console.log('response', collectionName, response.collection)
+
+      const user = await this.fetchUser()
+      console.log({ user })
+      if (user?.group && user.group !== 'admin') {
+        const filterDir = user.group
+        console.log({ filterDir })
+
+        response.collection.documents.edges =
+          response.collection.documents.edges.filter((edge) => {
+            const { node } = edge
+            console.log(node.__typename, node)
+            switch (node.__typename) {
+              case 'Folder':
+                return node.path.startsWith(`~/${filterDir}`)
+              case 'Lesson':
+                return node._sys.path.startsWith(`content/lessons/${filterDir}`)
+              default:
+                return true
+            }
+          })
+      }
+
+      console.log(
+        'filtered edges',
+        collectionName,
+        response.collection.documents.edges
+      )
+
       return response.collection
     } else {
       try {
