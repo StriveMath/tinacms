@@ -1,5 +1,12 @@
 # tinacms-clerk
 
+## 1.0.14
+
+### Patch Changes
+
+- Updated dependencies [a03edfab6]
+  - @strivemath/tinacms@1.5.38
+
 ## 1.0.13
 
 ### Patch Changes
