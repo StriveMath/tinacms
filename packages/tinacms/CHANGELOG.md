@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.38
+
+### Patch Changes
+
+- a03edfab6: filter folders and lesson by basedir = user.group
+
 ## 1.5.37
 
 ### Patch Changes

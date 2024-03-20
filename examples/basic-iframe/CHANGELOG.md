@@ -4,6 +4,13 @@
 
 ### Patch Changes
 
+- Updated dependencies [a03edfab6]
+  - @strivemath/tinacms@1.5.38
+
+## null
+
+### Patch Changes
+
 - Updated dependencies [68e7acf94]
   - @strivemath/tinacms@1.5.37
 
