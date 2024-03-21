@@ -1,5 +1,11 @@
 # tinacms-cli
 
+## 1.5.52
+
+### Patch Changes
+
+- 4f65878c1: index command
+
 ## 1.5.51
 
 ### Patch Changes
