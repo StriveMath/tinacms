@@ -22,7 +22,7 @@ export class IndexCommand extends BaseCommand {
   })
 
   async catch(error: any): Promise<void> {
-    logger.error('Error occured during tinacms dev')
+    logger.error('Error occured during tinacms index')
     console.error(error)
     process.exit(1)
   }
@@ -64,7 +64,7 @@ export class IndexCommand extends BaseCommand {
         tinaSchema,
         lookup,
       })
-      const apiURL = await codegen.execute()
+      await codegen.execute()
 
       if (!configManager.isUsingLegacyFolder) {
         delete require.cache[configManager.generatedSchemaJSONPath]
@@ -115,6 +115,8 @@ export class IndexCommand extends BaseCommand {
       process.exit(1)
     }
 
+    logger.info('Done indexing!')
     await this.startSubCommand()
+    process.exit(0)
   }
 }
