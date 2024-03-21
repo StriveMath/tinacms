@@ -2,6 +2,7 @@ import { Cli, Builtins } from 'clipanion'
 //@ts-ignore
 import { version, name } from '../package.json'
 import { DevCommand } from './next/commands/dev-command'
+import { IndexCommand } from './next/commands/index-command'
 import { BuildCommand } from './next/commands/build-command'
 import { AuditCommand } from './next/commands/audit-command'
 import { InitCommand } from './next/commands/init-command'
@@ -22,6 +23,7 @@ const cli = new Cli({
 })
 
 cli.register(DevCommand)
+cli.register(IndexCommand)
 cli.register(BuildCommand)
 cli.register(AuditCommand)
 cli.register(InitCommand)
