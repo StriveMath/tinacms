@@ -1,5 +1,11 @@
 # tinacms-cli
 
+## 1.5.53
+
+### Patch Changes
+
+- a5e12db7f: close index command when done
+
 ## 1.5.52
 
 ### Patch Changes
