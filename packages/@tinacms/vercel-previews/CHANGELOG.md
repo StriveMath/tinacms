@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.35
+
+### Patch Changes
+
+- @strivemath/tinacms@1.5.39
+
 ## 0.0.34
 
 ### Patch Changes
