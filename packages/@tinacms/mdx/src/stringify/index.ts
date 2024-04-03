@@ -151,6 +151,8 @@ export const rootElement = (
 ): Md.Root => {
   const children: Md.Content[] = []
   content.children?.forEach((child) => {
+    if (!child || typeof child === 'undefined') return
+    if (!child.type || typeof child.type === 'undefined') return
     const value = blockElement(child, field, imageCallback)
     if (value) {
       children.push(value)
