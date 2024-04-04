@@ -1,5 +1,12 @@
 # e2e-next
 
+## 0.1.71
+
+### Patch Changes
+
+- @strivemath/tinacms@1.5.40
+- @strivemath/tinacms-datalayer@1.2.36
+
 ## 0.1.70
 
 ### Patch Changes

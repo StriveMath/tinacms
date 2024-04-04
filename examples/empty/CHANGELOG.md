@@ -4,6 +4,13 @@
 
 ### Patch Changes
 
+- @strivemath/tinacms@1.5.40
+- @strivemath/tinacms-cli@1.5.55
+
+## null
+
+### Patch Changes
+
 - @strivemath/tinacms@1.5.39
 - @strivemath/tinacms-cli@1.5.54
 

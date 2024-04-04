@@ -4,6 +4,14 @@
 
 ### Patch Changes
 
+- @strivemath/tinacms-graphql@1.4.36
+- @strivemath/tinacms@1.5.40
+- @strivemath/tinacms-datalayer@1.2.36
+
+## null
+
+### Patch Changes
+
 - @strivemath/tinacms-graphql@1.4.35
 - @strivemath/tinacms@1.5.39
 - @strivemath/tinacms-datalayer@1.2.35

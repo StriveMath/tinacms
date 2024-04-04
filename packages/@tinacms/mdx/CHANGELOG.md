@@ -1,5 +1,11 @@
 # @strivemath/tinacms-mdx
 
+## 1.3.27
+
+### Patch Changes
+
+- b406f9b08: fix: block content element undefinde type error
+
 ## 1.3.26
 
 ### Patch Changes

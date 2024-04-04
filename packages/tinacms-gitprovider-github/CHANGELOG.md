@@ -1,5 +1,11 @@
 # tinacms-gitprovider-github
 
+## 1.0.7
+
+### Patch Changes
+
+- @strivemath/tinacms-datalayer@1.2.36
+
 ## 1.0.6
 
 ### Patch Changes
