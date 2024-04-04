@@ -343,6 +343,12 @@ const blockContentElement = (
   field: RichTextType,
   imageCallback: (url: string) => string
 ): Md.BlockContent => {
+  if (!content.type) {
+    return {
+      type: 'paragraph',
+      children: [],
+    }
+  }
   switch (content.type) {
     case 'blockquote':
       return {
