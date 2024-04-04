@@ -1,5 +1,15 @@
 # tinacms-cli
 
+## 1.5.55
+
+### Patch Changes
+
+- @strivemath/tinacms-app@1.2.47
+- @strivemath/tinacms-graphql@1.4.36
+- @strivemath/tinacms@1.5.40
+- @strivemath/tinacms-datalayer@1.2.36
+- @strivemath/tinacms-search@1.0.21
+
 ## 1.5.54
 
 ### Patch Changes

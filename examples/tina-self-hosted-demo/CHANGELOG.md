@@ -1,5 +1,14 @@
 # @tinacms/self-hosted-starter
 
+## 0.1.56
+
+### Patch Changes
+
+- @strivemath/tinacms@1.5.40
+- @strivemath/tinacms-datalayer@1.2.36
+- @strivemath/tinacms-authjs@1.0.18
+- @strivemath/tinacms-gitprovider-github@1.0.7
+
 ## 0.1.55
 
 ### Patch Changes

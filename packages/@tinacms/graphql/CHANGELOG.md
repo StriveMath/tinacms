@@ -1,5 +1,12 @@
 # tina-graphql
 
+## 1.4.36
+
+### Patch Changes
+
+- Updated dependencies [b406f9b08]
+  - @strivemath/tinacms-mdx@1.3.27
+
 ## 1.4.35
 
 ### Patch Changes

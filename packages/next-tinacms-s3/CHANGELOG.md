@@ -1,5 +1,11 @@
 # @strivemath/next-tinacms-s3
 
+## 1.3.25
+
+### Patch Changes
+
+- @strivemath/tinacms@1.5.40
+
 ## 1.3.24
 
 ### Patch Changes
