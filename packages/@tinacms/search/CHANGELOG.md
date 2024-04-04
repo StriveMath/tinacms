@@ -1,5 +1,11 @@
 # @strivemath/tinacms-search
 
+## 1.0.20
+
+### Patch Changes
+
+- @strivemath/tinacms-graphql@1.4.35
+
 ## 1.0.19
 
 ### Patch Changes

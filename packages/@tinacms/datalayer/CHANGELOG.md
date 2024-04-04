@@ -1,5 +1,11 @@
 # tina-graphql
 
+## 1.2.35
+
+### Patch Changes
+
+- @strivemath/tinacms-graphql@1.4.35
+
 ## 1.2.34
 
 ### Patch Changes

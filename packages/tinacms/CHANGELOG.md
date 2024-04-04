@@ -1,5 +1,13 @@
 # tinacms
 
+## 1.5.39
+
+### Patch Changes
+
+- Updated dependencies [5042344da]
+  - @strivemath/tinacms-mdx@1.3.26
+  - @strivemath/tinacms-search@1.0.20
+
 ## 1.5.38
 
 ### Patch Changes

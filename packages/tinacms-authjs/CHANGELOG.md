@@ -1,5 +1,11 @@
 # tinacms-authjs
 
+## 1.0.17
+
+### Patch Changes
+
+- @strivemath/tinacms@1.5.39
+
 ## 1.0.16
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @strivemath/tinacms-mdx
 
+## 1.3.26
+
+### Patch Changes
+
+- 5042344da: fix: skip element if child or type is undefined
+
 ## 1.3.25
 
 ### Patch Changes
