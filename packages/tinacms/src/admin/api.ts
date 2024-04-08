@@ -11,6 +11,8 @@ import {
   SearchClient,
   processDocumentForIndexing,
 } from '@strivemath/tinacms-search/dist/index-client'
+import { useCMS } from '@toolkit/react-tinacms'
+import { useEffect, useState } from 'react'
 
 export interface FilterArgs {
   filterField: string
@@ -111,15 +113,6 @@ export class TinaAdminApi {
     filterArgs?: FilterArgs,
     graphqlFilter?: any
   ) {
-    console.log('fetchCollection', collectionName, {
-      includeDocuments,
-      folder,
-      after,
-      sortKey,
-      order,
-      filterArgs,
-    })
-
     let filter = null
     const filterField = filterArgs?.filterField
     if (filterField) {
@@ -281,18 +274,13 @@ export class TinaAdminApi {
               }
             )
 
-      console.log('response', collectionName, response.collection)
-
       const user = await this.fetchUser()
-      console.log({ user })
       if (user?.group && user.group !== 'admin') {
         const filterDir = user.group
-        console.log({ filterDir })
 
         response.collection.documents.edges =
           response.collection.documents.edges.filter((edge) => {
             const { node } = edge
-            console.log(node.__typename, node)
             switch (node.__typename) {
               case 'Folder':
                 return node.path.startsWith(`~/${filterDir}`)
@@ -304,19 +292,12 @@ export class TinaAdminApi {
           })
       }
 
-      console.log(
-        'filtered edges',
-        collectionName,
-        response.collection.documents.edges
-      )
-
       return response.collection
     } else {
       try {
         // TODO: fix this type
         // @ts-ignore
         const collection: Collection = this.schema.getCollection(collectionName)
-        console.log('response', collectionName, collection)
         return collection
       } catch (e) {
         console.error(
@@ -464,7 +445,7 @@ export class TinaAdminApi {
       const user = users.find((user) => user.email === authEmail)
 
       if (!user) {
-        console.log("couldn't find user", authEmail, users, {
+        console.warn("couldn't find user", authEmail, users, {
           authUser,
           userCollection,
         })
@@ -472,8 +453,28 @@ export class TinaAdminApi {
 
       return user
     } catch (err) {
-      console.log('error getting user', authUser, userCollection)
+      console.warn('error getting user', authUser, userCollection)
       console.error(err)
     }
   }
+}
+
+export function useIsTinaCMSAdmin() {
+  const cms = useCMS()
+
+  const [user, setUser] = useState<{
+    email: string
+    group?: string
+  } | null>(null)
+
+  useEffect(() => {
+    const api = new TinaAdminApi(cms)
+    api.fetchUser().then((user) => {
+      setUser(user)
+    })
+  }, [cms])
+
+  if (!user) return false
+  if (!user.group || user.group === 'admin') return true
+  return false
 }
