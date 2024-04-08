@@ -48,7 +48,7 @@ import GetCMS from '../components/GetCMS'
 import GetCollection from '../components/GetCollection'
 import { RouteMappingPlugin } from '../plugins/route-mapping'
 import { PageBody, PageHeader, PageWrapper } from '../components/Page'
-import { TinaAdminApi } from '../api'
+import { TinaAdminApi, useIsTinaCMSAdmin } from '../api'
 import type { Collection, TinaField } from '@strivemath/tinacms-schema-tools'
 import { CollectionFolder, useCollectionFolder } from './utils'
 
@@ -258,6 +258,38 @@ const CollectionListPage = () => {
       booleanEquals: null,
     }))
   }, [collectionName])
+
+  const isAdmin = useIsTinaCMSAdmin()
+  const [indexing, setIndexing] = useState(false)
+  const [indexingError, setIndexingError] = useState(null)
+  const [indexingSuccess, setIndexingSuccess] = useState(null)
+
+  async function indexTina() {
+    setIndexing(true)
+    setIndexingError(null)
+    setIndexingSuccess(null)
+
+    try {
+      console.log('indexing tina...')
+
+      const response = await fetch('http://152.42.199.144:8080')
+      console.log(response)
+
+      const message = await response.text()
+      console.log(message)
+
+      if (response?.ok) {
+        setIndexingSuccess(message)
+      } else {
+        throw new Error(message)
+      }
+    } catch (err) {
+      console.warn('error indexing tina...')
+      console.error(err)
+      setIndexingError(err)
+    }
+    setIndexing(false)
+  }
 
   return (
     <GetCMS>
@@ -518,25 +550,39 @@ const CollectionListPage = () => {
                         </div>
                         <div className="flex self-end	justify-self-end">
                           {!collection.templates && allowCreate && (
-                            <Link
-                              to={`/${
-                                folder.fullyQualifiedName
-                                  ? [
-                                      'collections',
-                                      'new',
-                                      collectionName,
-                                      '~',
-                                      folder.name,
-                                    ].join('/')
-                                  : ['collections', 'new', collectionName].join(
-                                      '/'
-                                    )
-                              }`}
-                              className="icon-parent inline-flex items-center font-medium focus:outline-none focus:ring-2 focus:shadow-outline text-center rounded-full justify-center transition-all duration-150 ease-out whitespace-nowrap shadow text-white bg-blue-500 hover:bg-blue-600 focus:ring-blue-500 text-sm h-10 px-6"
-                            >
-                              Create New{' '}
-                              <BiPlus className="w-5 h-full ml-1 opacity-70" />
-                            </Link>
+                            <div className="flex gap-4">
+                              {isAdmin && (
+                                <Button
+                                  variant="primary"
+                                  onClick={indexTina}
+                                  disabled={indexing}
+                                >
+                                  {!indexing ? 'Index Tina' : 'indexing...'}
+                                </Button>
+                              )}
+
+                              <Link
+                                to={`/${
+                                  folder.fullyQualifiedName
+                                    ? [
+                                        'collections',
+                                        'new',
+                                        collectionName,
+                                        '~',
+                                        folder.name,
+                                      ].join('/')
+                                    : [
+                                        'collections',
+                                        'new',
+                                        collectionName,
+                                      ].join('/')
+                                }`}
+                                className="icon-parent inline-flex items-center font-medium focus:outline-none focus:ring-2 focus:shadow-outline text-center rounded-full justify-center transition-all duration-150 ease-out whitespace-nowrap shadow text-white bg-blue-500 hover:bg-blue-600 focus:ring-blue-500 text-sm h-10 px-6"
+                              >
+                                Create New{' '}
+                                <BiPlus className="w-5 h-full ml-1 opacity-70" />
+                              </Link>
+                            </div>
                           )}
                           {collection.templates && allowCreate && (
                             <TemplateMenu
@@ -548,8 +594,38 @@ const CollectionListPage = () => {
                         </div>
                       </div>
                     </PageHeader>
+
                     <PageBody>
                       <div className="w-full mx-auto max-w-screen-xl">
+                        {(!!indexingError || indexingSuccess) && (
+                          <div className="mb-5">
+                            <code className="bg-black p-4 rounded-lg block text-white">
+                              {!!indexingError && (
+                                <>
+                                  <div>Index Tina error:</div>
+                                  <div className="text-red-400">
+                                    {indexingError.toString()}
+                                  </div>
+                                  <br />
+                                  <div>
+                                    Check console for more information...
+                                  </div>
+                                </>
+                              )}
+                              {indexingSuccess && (
+                                <>
+                                  <div>Index Tina successful:</div>
+                                  <div className="text-green-400">
+                                    {indexingSuccess}
+                                  </div>
+                                  <br />
+                                  <div>Refresh page to see new folder...</div>
+                                </>
+                              )}
+                            </code>
+                          </div>
+                        )}
+
                         {sortField && !sortField.required && (
                           <p className="mb-4 text-gray-500">
                             <em>
