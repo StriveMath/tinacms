@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.41
+
+### Patch Changes
+
+- 29013888b: index tina UI
+
 ## 1.5.40
 
 ### Patch Changes
