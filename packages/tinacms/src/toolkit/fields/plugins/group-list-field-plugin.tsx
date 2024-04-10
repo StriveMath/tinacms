@@ -54,7 +54,7 @@ const Group = ({ tinaForm, form, field, input, meta, index }: GroupProps) => {
     } else {
       obj = field.defaultItem || {}
     }
-    form.mutators.insert(field.name, 0, obj)
+    form.mutators.push(field.name, obj)
   }, [form, field])
 
   const items = input.value || []
