@@ -1,5 +1,12 @@
 # tinacms-authjs
 
+## 1.0.21
+
+### Patch Changes
+
+- Updated dependencies [863307612]
+  - @strivemath/tinacms@1.5.43
+
 ## 1.0.20
 
 ### Patch Changes

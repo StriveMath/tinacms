@@ -1,6 +1,6 @@
 {
   "name": "@strivemath/tinacms-authjs",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "files": [

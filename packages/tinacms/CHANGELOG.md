@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.43
+
+### Patch Changes
+
+- 863307612: index point to https://reindex.strivemath.com iso ip address (now with SSL!)
+
 ## 1.5.42
 
 ### Patch Changes

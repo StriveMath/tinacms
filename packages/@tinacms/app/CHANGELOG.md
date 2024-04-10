@@ -1,5 +1,12 @@
 # @strivemath/tinacms-app
 
+## 1.2.50
+
+### Patch Changes
+
+- Updated dependencies [863307612]
+  - @strivemath/tinacms@1.5.43
+
 ## 1.2.49
 
 ### Patch Changes
