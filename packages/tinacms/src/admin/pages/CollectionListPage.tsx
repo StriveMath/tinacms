@@ -272,7 +272,7 @@ const CollectionListPage = () => {
     try {
       console.log('indexing tina...')
 
-      const response = await fetch('http://152.42.199.144:8080')
+      const response = await fetch('https://reindex.strivemath.com')
       console.log(response)
 
       const message = await response.text()
