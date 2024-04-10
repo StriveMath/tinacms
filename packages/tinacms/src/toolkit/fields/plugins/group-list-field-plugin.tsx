@@ -8,7 +8,7 @@ import { GroupPanel, PanelHeader, PanelBody } from './group-field-plugin'
 import { useEvent } from '@toolkit/react-core/use-cms-event'
 import { FieldHoverEvent, FieldFocusEvent } from '../field-events'
 import { useCMS } from '@toolkit/react-core/use-cms'
-import { BiPencil } from 'react-icons/bi'
+import { BiPencil, BiDuplicate } from 'react-icons/bi'
 import { EmptyList, ListFieldMeta, ListPanel } from './list-field-meta'
 
 interface GroupFieldDefinititon extends Field {
@@ -147,9 +147,15 @@ const Item = ({
   const cms = useCMS()
   const FormPortal = useFormPortal()
   const [isExpanded, setExpanded] = React.useState<boolean>(false)
+
   const removeItem = React.useCallback(() => {
     tinaForm.mutators.remove(field.name, index)
   }, [tinaForm, field, index])
+
+  const duplicateItem = React.useCallback(() => {
+    tinaForm.mutators.insert(field.name, index + 1, item)
+  }, [tinaForm, field, index])
+
   const title = label || (field.label || field.name) + ' Item'
 
   const { dispatch: setHoveredField } = useEvent<FieldHoverEvent>('field:hover')
@@ -201,6 +207,7 @@ const Item = ({
               <GroupLabel>{title}</GroupLabel>
               <BiPencil className="h-5 w-auto fill-current text-gray-200 group-hover:text-inherit transition-colors duration-150 ease-out" />
             </ItemClickTarget>
+            <ItemDuplicateButton onClick={duplicateItem} />
             {(!fixedLength || (fixedLength && !isMin)) && (
               <ItemDeleteButton disabled={isMin} onClick={removeItem} />
             )}
@@ -282,6 +289,19 @@ export const ItemHeader = ({
     >
       {children}
     </div>
+  )
+}
+
+export const ItemDuplicateButton = ({ onClick, disabled = false }) => {
+  return (
+    <button
+      className={`w-8 px-1 py-2.5 flex items-center justify-center hover:bg-gray-50 text-gray-200 hover:text-blue-500 ${
+        disabled && 'pointer-events-none opacity-30 cursor-not-allowed'
+      }`}
+      onClick={onClick}
+    >
+      <BiDuplicate className="fill-current transition-colors ease-out duration-100" />
+    </button>
   )
 }
 
