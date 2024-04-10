@@ -1,5 +1,11 @@
 # tinacms
 
+## 1.5.42
+
+### Patch Changes
+
+- db2aa7c55: duplicate list item + add new item to end of list instead of start
+
 ## 1.5.41
 
 ### Patch Changes
