@@ -1,6 +1,6 @@
 {
   "name": "@strivemath/tinacms",
-  "version": "1.5.42",
+  "version": "1.5.43",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
